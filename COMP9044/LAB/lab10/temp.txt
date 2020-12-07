@@ -1,0 +1,449 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"d8e497010e",applicationID:"38546568"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.unsw.edu.au/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="UNSW Sydney, a Powerhouse of Cutting-Edge Research &amp; Teaching in the Asia-Pacific. UNSW Sydney is Ranked 45th in the 2018 QS World University Rankings, Welcome to Australia’s Global University." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.unsw.edu.au/" />
+<link rel="shortlink" href="https://www.unsw.edu.au/" />
+<meta name="msvalidate.01" content="746AC87A411F9549DEA52B55EFE3B554" />
+<meta name="google-site-verification" content="6qx9Sst49HVLYr4VV_ph4CLeFjT6pvzzifN_ar52_GY" />
+<script src="https://tags.tiqcdn.com/utag/unsw/portal/prod/utag.sync.js"></script>
+  <title>UNSW Sydney – Australia’s Global University</title>
+  <link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_UheyMgZ_Qsa6AQ5SkDWYqgWsQRQMtr-7DjUwvDR2p3E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_vZ_wrMQ9Og-YPPxa1q4us3N7DsZMJa-14jShHgRoRNo.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_GqCqCmGspWzZsDVTgkFoFb2eEt4xaByq4GFNcVi8QG4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_s-CtEHu2oRD8IzFlLQZpx1-U1hzsPlAFnBmM1cA7fY8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_Wu8npAzy16WmnnnWKxpexfgsAryolGGaX6yO3GWA5bU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300&amp;qe7xlm" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_j-l9d8LS1EA3QEpNbLNkWoAy1yYxSfR2UXCkRntMVx4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_Uzu4oMMuXqiR4Lp9xlhreHymZDwwqTs45jf7Fqj5Jl0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unsw.edu.au/sites/default/files/css/css_Sb3Cc42JSlktB2qnmoJqYD0iuo3Y1hT0G9sN3HWcEjQ.css" media="print" />
+  <script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_kJqkcohiyc8f0bZdlA4BnkEhugFI1gzxgSwtIXI-nVs.js"></script>
+<script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_Ua98zxjH9I2U2rTee9IFt0Bz0daoaQQTSnaDxCxt3Kc.js"></script>
+<script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_zyyoWRt1HX2db1hPgjMcjAPgh3khEUAtlJR611ceu3w.js"></script>
+<script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_wcolq_SLqK6en0tRFz0GX4BCZL72vk_lF7k8oGRS-gM.js"></script>
+<script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_2ssl2vDCbDEDA5K20Lxv580oNzqw-r9TK2qvx1B7jt4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var nodes = [{"title":"UNSW steps up action on climate change","body":"\u003Cp\u003EUNSW is divesting of fossil fuel assets by 2025 as part of its net zero emissions goal.\u003C\/p\u003E","url":"https:\/\/newsroom.unsw.edu.au\/news\/general\/unsw-steps-action-climate-change","image":"https:\/\/www.unsw.edu.au\/sites\/default\/files\/styles\/front_carousel\/public\/images\/climate-change-carousel.png?itok=rvofdayK"},{"title":"UNSW Alumni Award Winners announced","body":"\u003Cp\u003EThe UNSW Alumni Awards program celebrates the trailblazers and transformers within our alumni community. Read more about our 2020 winners.\u003C\/p\u003E","url":"https:\/\/www.alumni.giving.unsw.edu.au\/unsw-alumni-awards-2020","image":"https:\/\/www.unsw.edu.au\/sites\/default\/files\/styles\/front_carousel\/public\/images\/UNSW-Alumni-Award-Winners-announced_4.png?itok=kaUQRB7C"},{"title":"Join UNSW to change the course of      COVID-19","body":"\u003Cp\u003EUNSW has a clear vision to tackle the impacts of \u003Cbr \/\u003ECOVID-19\u003C\/p\u003E","url":"https:\/\/www.alumni.giving.unsw.edu.au\/join-unsw-change-course-covid-19","image":"https:\/\/www.unsw.edu.au\/sites\/default\/files\/styles\/front_carousel\/public\/images\/Covid-19%20philanthropy.png?itok=Ww01yfW4"},{"title":"UNSW x National Science Week","body":"\u003Cp\u003EHear from world-leading scientists and researchers to discover the innovations in science and technology that will shape our future.\u003C\/p\u003E","url":"https:\/\/newsroom.unsw.edu.au\/news\/science-tech\/unsw-hosts-national-science-week-events","image":"https:\/\/www.unsw.edu.au\/sites\/default\/files\/styles\/front_carousel\/public\/images\/CFI-InsideUNSW_banner_468x400-NSW.png?itok=ngAdJn5v"}];
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.unsw.edu.au/sites/default/files/js/js_US9Q15iBkGdQWGvxj_dlr5yNcU_zozYJmAUxhzCEy08.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"unswcorporate","theme_token":"e-FWN3mHMLbb2KzrSWFBNvFkMucz8bK-ZfqPkqxTHR0","js":{"public:\/\/google_tag\/google_tag.script.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"misc\/ui\/jquery.ui.button.min.js":1,"misc\/ui\/jquery.ui.mouse.min.js":1,"misc\/ui\/jquery.ui.draggable.min.js":1,"misc\/ui\/jquery.ui.position.min.js":1,"misc\/ui\/jquery.ui.resizable.min.js":1,"misc\/ui\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/contrib\/views\/js\/jquery.ui.dialog.patch.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/custom\/unswsearchbox\/js\/searchbox.js":1,"sites\/all\/themes\/unswcorporate\/js\/site.js":1,"0":1,"sites\/all\/themes\/unswcorporate\/js\/carousel-front.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/custom\/media_unswtv\/js\/flash_detect_min.js":1,"sites\/all\/modules\/custom\/media_unswtv\/js\/media_unswtv.js":1,"sites\/all\/modules\/contrib\/media_youtube\/js\/media_youtube.js":1,"sites\/all\/themes\/unswcorporate\/js\/accordion.js":1,"sites\/all\/themes\/unswcorporate\/js\/jquery.cookie.js":1,"sites\/all\/themes\/unswcorporate\/js\/takeover.js":1},"css":{"sites\/all\/themes\/ninesixty\/styles\/framework\/reset.css":1,"sites\/all\/themes\/ninesixty\/styles\/framework\/text.css":1,"sites\/all\/themes\/ninesixty\/styles\/framework\/960.css":1,"sites\/all\/themes\/ninesixty\/styles\/framework\/debug.css":1,"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"\/\/fonts.googleapis.com\/css?family=Lato:300":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow_controls_text.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/custom\/unswsearchbox\/css\/unswsearchbox.css":1,"sites\/all\/themes\/ninesixty\/styles\/styles.css":1,"sites\/all\/themes\/unswcorporate\/css\/messages.css":1,"sites\/all\/themes\/unswcorporate\/css\/unswcorporate-style.css":1,"sites\/all\/themes\/unswcorporate\/css\/unswcorporate-text.css":1,"sites\/all\/themes\/unswcorporate\/css\/promotile.css":1,"sites\/all\/themes\/unswcorporate\/css\/navigation.css":1,"sites\/all\/themes\/unswcorporate\/css\/breadcrumb.css":1,"sites\/all\/themes\/unswcorporate\/css\/MyFontsWebfontsKit.css":1,"sites\/all\/themes\/unswcorporate\/css\/print.css":1}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:de429816f360e7dfaacb2ac12d6d2b3f":{"view_name":"emergency_message","view_display_id":"block","view_args":"","view_path":"node\/11","view_base_path":null,"view_dom_id":"de429816f360e7dfaacb2ac12d6d2b3f","pager_element":0},"views_dom_id:cb6141b7d4c9fbefa44304f1fd55beaa":{"view_name":"emergency_message","view_display_id":"block_1","view_args":"","view_path":"node\/11","view_base_path":null,"view_dom_id":"cb6141b7d4c9fbefa44304f1fd55beaa","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true,"\/":true},"viewsSlideshow":{"emergency_message-block_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0},"latest_news-block_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowControls":{"emergency_message-block_1":{"bottom":{"type":"viewsSlideshowControlsText"}},"latest_news-block_1":{"bottom":{"type":"viewsSlideshowControlsText"}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_emergency_message-block_1":{"num_divs":1,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"emergency_message-block_1","effect":"fade","transition_advanced":1,"timeout":8000,"speed":700,"delay":0,"sync":1,"random":0,"pause":0,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"},"#views_slideshow_cycle_main_latest_news-block_1":{"num_divs":3,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"latest_news-block_1","effect":"fade","transition_advanced":1,"timeout":0,"speed":700,"delay":0,"sync":1,"random":0,"pause":0,"pause_on_click":0,"action_advanced":1,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}}});
+//--><!]]>
+</script>
+  <!--[if lte IE 7]>
+    <script language="javascript" type="text/javascript" src="/sites/all/themes/unswcorporate/js/ie7-tooltip.js"></script>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/unswcorporate/css/ie7.css"  />
+  <![endif]-->
+  
+  </head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-11 node-type-page" >
+  <!-- Start © Tealium tag -->
+        <script type="text/javascript">
+      var utag_data = {"page_name":"Home","platform_type":"Drupal","site_id":"UNSW-Corporate-site","site_name":"UNSW Sydney","site_section":"Home","tealium_event":"homepage-view","user_hipa":"M3Xf5gyAJQtWpZ0bEYk_TXxbTsRZox4-Iql_dOmDUyQ","content_type":"page"};
+    </script>
+        <script type="text/javascript">
+    (function(a,b,c,d){
+        a='//tags.tiqcdn.com/utag/unsw/portal/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+      <!-- End © Tealium tag -->
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JB423" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  <div id="page-color-scheme" class="">
+
+  
+  <a name="top"></a>
+  <div id="site-header-bg" class="clear-block">
+    <div id="site-header" class="container-12 clear-block">
+    <div id="site-header-top" class="clearfix">
+            <h1 class="element-invisible">UNSW Sydney</h1>
+            <div id="branding" class="grid-4 clear-block">
+              <span id="logo" class="grid-1 alpha"><a href="/" class="header active" rel="home" title="Home"><img typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/UNSW_0.png" alt="Home" title="Home" /></a></span>
+                        </div>
+
+          <div id="top-banner">
+          <div class="region region-top-banner">
+    <div id="block-unswsearchbox-header-search" class="block block-unswsearchbox">
+
+    
+  <div class="content">
+    <form action="/" method="post" id="unswsearchbox-search-block-form" accept-charset="UTF-8"><div><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><div class="form-item form-type-textfield form-item-keyword">
+ <input title="Enter the terms you wish to search for." placeholder="Search" type="text" id="edit-keyword" name="keyword" value="" size="20" maxlength="128" class="form-text" />
+</div>
+<div id="edit-scope" class="form-radios"><div class="form-item form-type-radio form-item-scope">
+ <input type="radio" id="edit-scope-0" name="scope" value="0" checked="checked" class="form-radio" />  <label class="option" for="edit-scope-0">UNSW Websites </label>
+
+</div>
+<div class="form-item form-type-radio form-item-scope">
+ <input type="radio" id="edit-scope-1" name="scope" value="1" class="form-radio" />  <label class="option" for="edit-scope-1">This website </label>
+
+</div>
+</div><input type="hidden" name="form_build_id" value="form-BQZW7tLbEbIV8rIfkpfpfdJ_cQSZT2SY4iZXG_8UHXc" />
+<input type="hidden" name="form_id" value="unswsearchbox_search_block_form" />
+</div></form>  </div>
+</div>
+<div id="block-menu-menu-unsw-top-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://my.unsw.edu.au" class="header">myUNSW</a></li>
+<li class="leaf"><a href="http://library.unsw.edu.au" class="header">Library</a></li>
+<li class="leaf"><a href="http://www.facilities.unsw.edu.au/getting-uni/campus-maps" class="header">Maps</a></li>
+<li class="leaf"><a href="/contacts" class="header">Contacts</a></li>
+<li class="last leaf"><a href="https://www.jobs.unsw.edu.au">Jobs</a></li>
+</ul>  </div>
+</div>
+  </div>
+      </div>
+        </div>
+
+        <div id="site-header-bottom" class="clearfix">
+      <div id="site-menu" class="clearfix">
+                <h2 class="element-invisible">Main menu</h2>
+                <ul id="main-menu" class="inline main-menu"><li class="menu-198 first"><a href="/about-us" class="home_nav">About Us</a></li>
+<li class="menu-2292"><a href="/future-students" class="home_nav">Future Students</a></li>
+<li class="menu-957"><a href="http://www.gettingstarted.unsw.edu.au" class="home_nav">Getting Started</a></li>
+<li class="menu-567"><a href="https://research.unsw.edu.au" class="home_nav">Research</a></li>
+<li class="menu-570"><a href="/faculties" class="home_nav">Faculties</a></li>
+<li class="menu-569"><a href="http://newsroom.unsw.edu.au" class="home_nav" target="_self">Newsroom</a></li>
+<li class="menu-3273 last"><a href="https://alumni.giving.unsw.edu.au">Alumni &amp; Giving</a></li>
+</ul>              </div>
+    </div>
+    
+      <div id="header-region" class="region clear-block">
+              </div>
+      <div class="clear"></div>
+
+    </div>
+  </div>
+
+  <div id="page" class="container-12 clear-block">
+    
+        
+    <div id="site-subheader" class="prefix-1 suffix-1 clear-block"></div>
+
+    
+    <div id="content-top" class="region clear-block">
+        <div class="region region-content-top">
+    <div id="block-unswfront-front-carousel" class="block block-unswfront">
+
+    
+  <div class="content">
+    <div class="carousel-holder"><div class="carousel"><div class="slide"><a class="slide-img promo_box" href="https://newsroom.unsw.edu.au/news/general/unsw-steps-action-climate-change"><img src="https://www.unsw.edu.au/sites/default/files/styles/front_carousel/public/images/climate-change-carousel.png?itok=rvofdayK" alt="UNSW steps up action on climate change" /></a></div></div><div id="front-menu"><ul class="menu"><li class="first expanded"><a href="/future-students" class="toggle_menu" data-click_name="Future students" data-click_category="homepage-overlay-menu">Future students</a><ul class="menu"><li class="first leaf"><a href="/future-students/domestic-undergraduate/what-makes-us-us/lets-go" class="toggle_menu" data-click_name="Domestic Undergraduate" data-click_category="homepage-overlay-menu">Domestic Undergraduate</a></li>
+<li class="leaf"><a href="/future-students/postgraduate-coursework" class="toggle_menu" data-click_name="Postgraduate Coursework" data-click_category="homepage-overlay-menu">Postgraduate Coursework</a></li>
+<li class="leaf"><a href="http://research.unsw.edu.au/future-students" class="toggle_menu" data-click_name="Postgraduate Research" data-click_category="homepage-overlay-menu">Postgraduate Research</a></li>
+<li class="leaf"><a href="http://www.international.unsw.edu.au/" class="toggle_menu" data-click_name="International" data-click_category="homepage-overlay-menu">International</a></li>
+<li class="last leaf"><a href="/future-students/non-award-short-courses" class="toggle_menu" data-click_name="Non-award &amp; short courses" data-click_category="homepage-overlay-menu">Non-award &amp; short courses</a></li>
+</ul></li>
+<li class="expanded"><a href="https://student.unsw.edu.au" class="toggle_menu" data-click_name="Current students" data-click_category="homepage-overlay-menu">Current students</a><ul class="menu"><li class="first leaf"><a href="http://my.unsw.edu.au" class="toggle_menu" data-click_name="myUNSW" data-click_category="homepage-overlay-menu">myUNSW</a></li>
+<li class="leaf"><a href="https://moodle.telt.unsw.edu.au/" class="toggle_menu" data-click_name="Moodle" data-click_category="homepage-overlay-menu">Moodle</a></li>
+<li class="leaf"><a href="http://www.timetable.unsw.edu.au/" class="toggle_menu" data-click_name="Class Timetable" data-click_category="homepage-overlay-menu">Class Timetable</a></li>
+<li class="leaf"><a href="https://www.cloudemail.unsw.edu.au/" class="toggle_menu" data-click_name="Email" data-click_category="homepage-overlay-menu">Email</a></li>
+<li class="last leaf"><a href="http://www.handbook.unsw.edu.au" class="toggle_menu" data-click_name="Handbook" data-click_category="homepage-overlay-menu">Handbook</a></li>
+</ul></li>
+<li class="expanded"><a href="/life" class="toggle_menu" data-click_name="Life at UNSW" data-click_category="homepage-overlay-menu">Life at UNSW</a><ul class="menu"><li class="first leaf"><a href="https://student.unsw.edu.au/exchange" class="toggle_menu" data-click_name="Student Exchange" data-click_category="homepage-overlay-menu">Student Exchange</a></li>
+<li class="leaf"><a href="http://www.housing.unsw.edu.au/" class="toggle_menu" data-click_name="Accommodation" data-click_category="homepage-overlay-menu">Accommodation</a></li>
+<li class="leaf"><a href="http://www.arc.unsw.edu.au/" class="toggle_menu" data-click_name="Arc" data-click_category="homepage-overlay-menu">Arc</a></li>
+<li class="leaf"><a href="https://student.unsw.edu.au/node/80" class="toggle_menu" data-click_name="Co-curricular Activities" data-click_category="homepage-overlay-menu">Co-curricular Activities</a></li>
+<li class="last leaf"><a href="https://student.unsw.edu.au/development" class="toggle_menu" data-click_name="Professional Development" data-click_category="homepage-overlay-menu">Professional Development</a></li>
+</ul></li>
+<li class="last expanded"><a href="/staff" class="toggle_menu" data-click_name="Staff" data-click_category="homepage-overlay-menu">Staff</a><ul class="menu"><li class="first leaf"><a href="http://teaching.unsw.edu.au/" class="toggle_menu" data-click_name="Teaching Gateway" data-click_category="homepage-overlay-menu">Teaching Gateway</a></li>
+<li class="leaf"><a href="http://www.hr.unsw.edu.au" class="toggle_menu" data-click_name="Human Resources" data-click_category="homepage-overlay-menu">Human Resources</a></li>
+<li class="leaf"><a href="https://my.unsw.edu.au/student/atoz/AtoZstaff.html" class="toggle_menu" data-click_name="Services Directory" data-click_category="homepage-overlay-menu">Services Directory</a></li>
+<li class="leaf"><a href="https://www.fin.unsw.edu.au/" data-click_name="Finance" data-click_category="homepage-overlay-menu">Finance</a></li>
+<li class="last leaf"><a href="https://www.it.unsw.edu.au/" class="toggle_menu" data-click_name="IT Services" data-click_category="homepage-overlay-menu">IT Services</a></li>
+</ul></li>
+</ul></div></div>  </div>
+</div>
+<div id="block-views-emergency-message-block-1" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-emergency-message view-id-emergency_message view-display-id-block_1 view-dom-id-cb6141b7d4c9fbefa44304f1fd55beaa">
+        
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+    
+    <div id="views_slideshow_cycle_main_emergency_message-block_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_emergency_message-block_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_emergency_message-block_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first clearfix">
+    
+  <div class="views-field views-field-title">        <span class="field-content">Coronavirus (COVID-19)</span>  </div>  
+  <div class="views-field views-field-field-emergency-body">        <div class="field-content"><p>UNSW is continuing to review and monitor the COVID-19 situation and updating students, staff, parents, partners and visitors as new information becomes available.</p><p>We are aware that students may be facing unexpected financial burdens as a result of the COVID-19 pandemic.</p><p>In response, UNSW is increasing the availability of financial assistance to both domestic and international students, expanding existing programmes and adopting new measures to help support students in financial stress.</p><p>More information is available on the <a href="https://www.covid-19.unsw.edu.au/information-students#fin" target="_blank">Financial Support Package for Students</a> page.</p><p>UNSW has launched a <a href="https://www.alumni.giving.unsw.edu.au/join-unsw-change-course-covid-19">two-part plan to change the course of COVID-19</a> and protect the most vulnerable members of its community.</p><p>Visit our <a href="https://www.covid-19.unsw.edu.au/" target="_blank">COVID-19 website</a> for the latest updates.</p></div>  </div>  
+  <div class="views-field views-field-field-emergency-link">        <div class="field-content"><a href="https://www.unsw.edu.au/advice-on-unsw-response-to-the-coronavirus">Read more</a></div>  </div></div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+    </div>
+
+          
+    
+    <div id="main" class="column grid-12">
+              <div class="tabs"></div>
+            
+      <div id="main-content" class="region clear-block">
+          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-11" class="node node-page  clear-block">
+
+
+
+  
+    <div class="content"></div>
+
+  </div>  </div>
+</div>
+  </div>
+      </div>
+    </div>
+
+    
+        <div id="content-bottom" class="region clear-block">
+        <div class="region region-content-bottom">
+    <div id="block-views-latest-news-block-1" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-latest-news view-id-latest_news view-display-id-block_1 view-dom-id-fd93859b462f28dcd3ac1d7b4e6506d5">
+        
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+    
+    <div id="views_slideshow_cycle_main_latest_news-block_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_latest_news-block_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_latest_news-block_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first clearfix">
+    
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="https://newsroom.unsw.edu.au/news/science-tech/renewable-energy-transition-makes-dollars-and-sense"><img typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/latest_news_b/public/field/image/1._shutterstock_110700254_copy_1.jpg?itok=LHvAt6PA" width="284" height="208" /></a></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="news-block-header">Latest News</div>
+<div class="news-block-title"><a href="https://newsroom.unsw.edu.au/news/science-tech/renewable-energy-transition-makes-dollars-and-sense">Renewable energy transition makes dollars and sense</a></div></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_latest_news-block_1_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-1 views-row-even clearfix">
+    
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="https://newsroom.unsw.edu.au/news/social-affairs/uber-eats-deliveroo-expose-how-infrastructure-lags-behind-innovation"><img typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/latest_news_b/public/field/image/uber_eats_rider_2.png?itok=UJM6vJbX" width="284" height="208" /></a></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="news-block-header">Latest News</div>
+<div class="news-block-title"><a href="https://newsroom.unsw.edu.au/news/social-affairs/uber-eats-deliveroo-expose-how-infrastructure-lags-behind-innovation">Uber Eats, Deliveroo expose how infrastructure lags behind innovation</a></div></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_latest_news-block_1_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-2 views-row-odd views-row-last clearfix">
+    
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="https://newsroom.unsw.edu.au/news/general/rio-tokyo-rugby-7s-player-henry-hutchison-takes-long-road-between-olympics"><img typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/latest_news_b/public/field/image/img_0043_2_1.jpg?itok=Nqxs00UF" width="284" height="208" /></a></div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="news-block-header">Latest News</div>
+<div class="news-block-title"><a href="https://newsroom.unsw.edu.au/news/general/rio-tokyo-rugby-7s-player-henry-hutchison-takes-long-road-between-olympics">Rio to Tokyo: Rugby 7s player Henry Hutchison takes the long road between Olympics</a></div></span>  </div></div>
+</div>
+</div>
+</div>
+          <div class="views-slideshow-controls-bottom clearfix">
+        <div id="views_slideshow_controls_text_latest_news-block_1" class="views-slideshow-controls-text views_slideshow_controls_text">
+  <span id="views_slideshow_controls_text_previous_latest_news-block_1" class="views-slideshow-controls-text-previous views_slideshow_controls_text_previous"><a href="#">Previous</a></span>
+  <span id="views_slideshow_controls_text_pause_latest_news-block_1" class="views-slideshow-controls-text-pause views_slideshow_controls_text_pause  views-slideshow-controls-text-status-play"><a href="#">Pause</a></span>
+  <span id="views_slideshow_controls_text_next_latest_news-block_1" class="views-slideshow-controls-text-next views_slideshow_controls_text_next"><a href="#">Next</a></span>
+</div>
+      </div>
+      </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      More from the <a class="promo_box" href="http://newsroom.unsw.edu.au/">Newsroom</a>    </div>
+  
+  
+</div>  </div>
+</div>
+<div id="block-unswfront-front-footer-link-farm" class="block block-unswfront">
+
+    
+  <div class="content">
+    <div id="footer-links-farm"><div class="unswvideo"><div class="video-wrapper">
+<iframe id="yt-CQ1EWEKIMhI" class="yt-player" width="310" height="195" src="//www.youtube.com/embed/CQ1EWEKIMhI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="video-details"><div class="video-header">Latest Video</div><div class="video-title">What do we need from the next generation of designers?</div><div class="text">Check out our <a class="more promo_box" href="http://www.youtube.com/unsw">YouTube channels</a>.</div></div><div class="clear"></div></div><div class="unswnewsroom"><ul class="menu newsroom"><li class="expanded"><a href="http://newsroom.unsw.edu.au">Latest News</a></li><li><div class="news-item "><span>15 Jul</span><a href="https://newsroom.unsw.edu.au/news/science-tech/renewable-energy-transition-makes-dollars-and-sense">Renewable energy transition makes dollars and sense</a><div class="content">
+  
+    New UNSW research has disproved the claim that the transition to renewable electricity systems will harm the global economy.
+  
+</div></div><div class="news-item "><span>14 Jul</span><a href="https://newsroom.unsw.edu.au/news/social-affairs/uber-eats-deliveroo-expose-how-infrastructure-lags-behind-innovation">Uber Eats, Deliveroo expose how infrastructure lags behind innovation</a><div class="content">
+  
+    Tonight I’ll be having new cycling lanes with a side of bike parking.
+  
+</div></div><div class="news-item last"><span>17 Jul</span><a href="https://newsroom.unsw.edu.au/news/general/rio-tokyo-rugby-7s-player-henry-hutchison-takes-long-road-between-olympics">Rio to Tokyo: Rugby 7s player Henry Hutchison takes the long road between Olympics</a><div class="content">
+  
+    With the Tokyo Olympics delayed until 2021, UNSW Commerce student Henry Hutchison has a long wait between Games, but he’s making the most of his time
+  
+</div></div><div class="clear"></div>More from <a class="more promo_box" href="http://newsroom.unsw.edu.au">Newsroom</a></li></ul></div><div class="unswvisitor "><ul class="menu"><li class="first expanded"><a href="/about-us/business-research-partners">Business &amp; Research Partners</a><ul class="menu"><li class="first leaf"><a href="https://research.unsw.edu.au/partner-us">Research Partnerships</a></li>
+<li class="leaf"><a href="https://enterprise.unsw.edu.au/">UNSW Enterprise</a></li>
+<li class="leaf"><a href="http://partnervisit.unsw.edu.au/">Official Visits</a></li>
+<li class="last leaf"><a href="https://founders.unsw.edu.au/">Entrepreneurship</a></li>
+</ul></li>
+<li class="last expanded"><a href="/about-us">Visitors &amp; community</a><ul class="menu"><li class="first leaf"><a href="http://www.facilities.unsw.edu.au/getting-uni">Getting to UNSW</a></li>
+<li class="leaf"><a href="http://www.enquiry.unsw.edu.au">Ask a question</a></li>
+<li class="leaf"><a href="http://www.giving.unsw.edu.au">Giving to UNSW</a></li>
+<li class="last leaf"><a href="http://www.hr.unsw.edu.au/services/recruitment/employment.html">Jobs@UNSW</a></li>
+</ul></li>
+</ul></div><div class="clear"></div></div>  </div>
+</div>
+<div id="block-unswpromotile-promo-tile" class="block block-unswpromotile">
+
+    
+  <div class="content">
+    <div class="promo-container home">
+    <div class="grid-2 promo-item alpha">
+      <div class="top-title"><a href="/events" class="promobox6 promo_box">UNSW Events</a></div>
+    <div class="thumb">
+    <a href="/events" class="promobox6 promo_box"><img class="color" typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/promo_front/public/images/unsw_mall_walk.jpg?itok=QRA1I26K" width="165" height="88" alt="UNSW Events image color" title="UNSW Events" /></a>    </div>
+    <div class="title"><a href="/events" class="promobox6 promo_box">UNSW Events</a></div>
+            <div class="body"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Find out what’s going on at UNSW</p></div></div></div></div>
+            
+                  <div class="more"><a href="/events" class="more">More</a></div>
+            <div class="clear"></div>
+        </div>
+
+    
+    <div class="grid-2 promo-item ">
+      <div class="top-title"><a href="https://www.scholarships.unsw.edu.au/" class="promobox6 promo_box">Scholarships</a></div>
+    <div class="thumb">
+    <a href="https://www.scholarships.unsw.edu.au/" class="promobox6 promo_box"><img class="color" typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/promo_front/public/images/UNSW%20Main%20-%20Scholarships%20Small.jpg?itok=qBuUQCkh" width="165" height="88" alt="Scholarships image color" title="Scholarships" /></a>    </div>
+    <div class="title"><a href="https://www.scholarships.unsw.edu.au/" class="promobox6 promo_box">Scholarships</a></div>
+            <div class="body"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Information about scholarships for local and international students</p></div></div></div></div>
+            
+                  <div class="more"><a href="https://www.scholarships.unsw.edu.au/" class="more">More</a></div>
+            <div class="clear"></div>
+        </div>
+
+    
+    <div class="grid-2 promo-item ">
+      <div class="top-title"><a href="http://www.unsw.edu.au/life" class="promobox6 promo_box">Student Life</a></div>
+    <div class="thumb">
+    <a href="http://www.unsw.edu.au/life" class="promobox6 promo_box"><img class="color" typeof="foaf:Image" src="https://www.unsw.edu.au/sites/default/files/styles/promo_front/public/images/infoday-mb-156.jpg?itok=W2X9kG9R" width="165" height="88" alt="Student Life image color" title="Student Life" /></a>    </div>
+    <div class="title"><a href="http://www.unsw.edu.au/life" class="promobox6 promo_box">Student Life</a></div>
+            <div class="body"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Learn more about life as a student at UNSW</p></div></div></div></div>
+            
+                  <div class="more"><a href="http://www.unsw.edu.au/life" class="more">More</a></div>
+            <div class="clear"></div>
+        </div>
+
+    
+    <div class="clear"></div>
+</div>  </div>
+</div>
+  </div>
+    </div>
+    
+    <div class="clear"></div>
+
+    <div id="footer" class="clear-block grid-12">
+      <div id="footer-region" class="region clear-block clearfix">
+
+                    <div class="region region-footer">
+    <div id="block-menu-menu-unsw-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/privacy" class="footer" data-click_name="Privacy Policy" data-click_category="footer-nav-menu">Privacy Policy</a></li>
+<li class="leaf"><a href="/copyright-disclaimer" class="footer" data-click_name="Copyright &amp; Disclaimer" data-click_category="footer-nav-menu">Copyright &amp; Disclaimer</a></li>
+<li class="leaf"><a href="/accessibility" class="footer" data-click_name="Accessibility" data-click_category="footer-nav-menu">Accessibility</a></li>
+<li class="leaf"><a href="/unsw-website-feedback" class="footer" target="_blank" data-click_name="Site Feedback" data-click_category="footer-nav-menu">Site Feedback</a></li>
+<li class="leaf"><a href="https://www.unsw.edu.au/complaints" data-click_name="Complaints" data-click_category="footer-nav-menu">Complaints</a></li>
+<li class="last leaf"><a href="/sitemap" class="footer" data-click_name="Sitemap" data-click_category="footer-nav-menu">Sitemap</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-15" class="block block-block social-media">
+
+    
+  <div class="content">
+    <div style="width: 370px;">
+<p><span>Follow us</span></p>
+<ul class="menu social"><li class="leaf first"><a class="facebook footer" href="http://www.facebook.com/unsw">Facebook</a></li>
+<li class="leaf"><a class="twitter footer" href="http://www.twitter.com/unsw">Twitter</a></li>
+<li class="leaf"><a class="instagram footer" href="http://www.instagram.com/unsw">Instagram</a></li>
+<li class="leaf last"><a class="wechat footer" href="http://www.international.unsw.edu.au/wechat-australia">Wechat</a></li>
+<li class="leaf"><a class="linkedin footer" href="https://www.linkedin.com/school/unsw">Linkedin</a></li>
+<li class="leaf"><a class="youtube footer" href="http://www.youtube.com/unsw">Youtube</a></li>
+<li class="leaf"><a class="tiktok footer" href="https://www.tiktok.com/@unswsydney?lang=en">TikTok</a></li>
+<li class="leaf last"><a class="weibo footer" href="https://www.weibo.com/ozunsw">Weibo</a></li>
+</ul></div>
+  </div>
+</div>
+<div id="block-block-10" class="block block-block footer-content">
+
+    
+  <div class="content">
+    <p><strong>UNSW</strong></p><p><br />Sydney NSW 2052 Australia</p><p>Telephone: <span style="text-decoration: underline;">+61 2 93851000</span></p><p><br />Vice-President, External Relations.<br /><br /></p><p style="font-size: 12px;"><strong>UNSW CRICOS Provider Code:</strong> 00098G</p><p style="font-size: 12px;"><strong>TEQSA Provider ID:</strong> PRV12055</p><p style="font-size: 12px;"><strong>ABN:</strong> 57 195 873 179</p>  </div>
+</div>
+  </div>
+          <br />
+          <div class="lastupdate">Page last updated:<br><span> Thursday 30 July 2020
+</span></div>
+                        <div class="hwcheck">UNSW Sydney NSW 2052 Australia</div>
+        <div id="backtotop"><a href="#top"></a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="footer-group">
+    <ul>
+      <li class="first go8"><a name="misc_g08" class="footer" href="http://www.go8.edu.au/" >Member Group of Eight</a></li>
+      <li class="uni21"><a name="misc_u21" class="footer" href="http://www.universitas21.com/">Member Universitas 21</a></li>
+      <li class="gt"><a name="misc_gt" class="footer" href="http://www.globaltechalliance.org/">Member Global Alliance of Technological Universities</a></li>
+      <li class="apru"><a name="misc_apru" class="footer" href="http://apru.org/">Member Association of Pacific Rim Universities</a></li>
+      <li class="plusalliance last"><a name="plus_alliance" class="footer" href="http://plusalliance.org">Member<br>PLuS Alliance</a></li>
+    </ul>
+    
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+</div>
+    
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d8e497010e","applicationID":"38546568","transactionName":"YVQHYRcHWxUFAEBYXFgeMEcMSVwIAAZMH0NeQQ==","queueTime":0,"applicationTime":14,"atts":"TRMEF18dSBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,49 @@
+#9313 project1 report
+#ZANNING WANG
+#zID: z5224151
+
+1、Implementation details of your c2lsh(). Explain how your major transform function works.
+2、Show the evaluation result of your implementation using your own test cases.
+3、What did you do to improve the efficiency of your implementation?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

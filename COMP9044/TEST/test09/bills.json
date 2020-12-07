@@ -1,0 +1,66 @@
+[
+  [
+     {"name": "Butter", "price": "$4.96"},
+     {"name": "Mars Bars", "price": "$0.04"}
+  ],
+  [
+     {"name": "Cheese", "price": "$4.06"},
+     {"name": "Mars Bars", "price": "$1.82"},
+     {"name": "Ramen", "price": "$2.55"},
+     {"name": "Bread", "price": "$4.68"},
+     {"name": "Noodles", "price": "$4.54"},
+     {"name": "Rice", "price": "$9.78"}
+  ],
+  [
+     {"name": "Milk", "price": "$5.53"},
+     {"name": "Pasta", "price": "$8.24"},
+     {"name": "Peanut Butter", "price": "$0.87"},
+     {"name": "Tofu", "price": "$7.57"}
+  ],
+  [
+     {"name": "Pasta", "price": "$7.35"},
+     {"name": "Peanut Butter", "price": "$5.65"},
+     {"name": "Bread", "price": "$2.76"},
+     {"name": "Tofu", "price": "$4.11"},
+     {"name": "Milk", "price": "$9.42"}
+  ],
+  [
+     {"name": "Rice", "price": "$1.02"},
+     {"name": "Tofu", "price": "$5.75"},
+     {"name": "Peanut Butter", "price": "$8.11"},
+     {"name": "Ramen", "price": "$6.86"},
+     {"name": "Bread", "price": "$6.61"},
+     {"name": "Noodles", "price": "$7.51"}
+  ],
+  [
+     {"name": "Pasta", "price": "$8.58"},
+     {"name": "Cheese", "price": "$0.54"},
+     {"name": "Ramen", "price": "$7.45"},
+     {"name": "Noodles", "price": "$4.55"},
+     {"name": "Milk", "price": "$7.97"},
+     {"name": "Weet Bix", "price": "$7.86"}
+  ],
+  [
+     {"name": "Ramen", "price": "$8.13"},
+     {"name": "Pasta", "price": "$6.17"},
+     {"name": "Bread", "price": "$4.36"},
+     {"name": "Weet Bix", "price": "$6.13"},
+     {"name": "Tofu", "price": "$5.46"},
+     {"name": "Butter", "price": "$0.81"}
+  ],
+  [
+     {"name": "Butter", "price": "$8.06"},
+     {"name": "Milk", "price": "$1.17"},
+     {"name": "Noodles", "price": "$0.53"},
+     {"name": "Bread", "price": "$6.32"},
+     {"name": "Rice", "price": "$6.81"},
+     {"name": "Ramen", "price": "$8.81"}
+  ],
+  [
+     {"name": "Peanut Butter", "price": "$3.41"},
+     {"name": "Noodles", "price": "$5.34"}
+  ],
+  [
+     {"name": "Pasta", "price": "$0.99"}
+  ]
+]

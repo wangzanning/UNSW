@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AngularAmbiguousComponentTag" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularIncorrectTemplateDefinition" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularInvalidAnimationTriggerAssignment" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularInvalidEntryComponent" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularInvalidImportedOrDeclaredSymbol" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularInvalidSelector" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularInvalidTemplateReferenceVariable" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularMissingEventHandler" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularMissingOrInvalidDeclarationInModule" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularMultipleStructuralDirectives" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularNonEmptyNgContent" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularRecursiveModuleImportExport" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularUndefinedBinding" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularUndefinedModuleExport" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AngularUndefinedTag" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="test.answer" />
+          <option value="test.positions" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

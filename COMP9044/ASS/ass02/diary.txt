@@ -1,0 +1,13 @@
+#COMP9044  Assignment 2 Diary
+#ZANNING WANG
+zID:z5224151
+|	Data	|	Start	|	Stop	|	Activity		|	Comments
+|20.07.27	|	18:30	|	20:30	|reading assignment	|		-
+|20.07.28	|	19:20	|	23:00   |design sheeple		|		-
+|20.07.29	|	10:00	|	12:30	|	coding			|finish subset 0
+|20.07.29	|	14:00	|	17:40	|	coding			|finish subset 1,2	
+|20.07.30	|	13:00	|	16:50	|   coding          |finish subset 3,4
+|20.07.30	|	21:00	|	23:00	|	coding			|finish all demos	
+|20.07.31	|	15:00	|	18:00	|	coding          |finish most of ass02 and tests
+|20.07.31	|	19:00	|	21:00	|	debugging		|upload to vlab, run autotest and debug	
+

@@ -1,0 +1,19 @@
+# Setting PATH for Python 3.8
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+alias python="usr/local/bin/python3.6.6"
+export PATH
+
+source ~/.bash_profile
+export SPARK_HOME=/Users/zanning/spark-2.4.6-bin-hadoop2.7
+export PYSPARK_PYTHON = python3.6.6
+export PYSPARK_DRIVER_PYTHON = python3.6.6
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/
+PATH=$JAVA_HOME/bin:$PATH:.
+CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
+export JAVA_HOME
+export PATH
+export CLASSPATH
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/
