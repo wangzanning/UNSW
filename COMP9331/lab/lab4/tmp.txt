@@ -1,0 +1,3 @@
+zh-Hans_AU@currency=CNY.UTF-8
+ | 
+zh-Hans_AU@currency=CNY

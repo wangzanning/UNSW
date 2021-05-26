@@ -1,0 +1,28 @@
+a! - file changed, different changes staged for commit
+b! - file changed, changes staged for commit
+c! - file changed, changes not staged for commit
+d! - file deleted
+e! - deleted
+f! - same as repo
+g! - added to index
+h! - untracked
+i! - added to index, file changed
+j! - added to index, file deleted
+
+在current，index，version都有或有过
+a! ------ 当前文件和index和version中都不同，index和version也不同
+b! ------ 当前文件和index相同和version不同，index和version也不同
+c! ------ 当前文件和index和version中都不同，index和version相同
+d! ------ index 和 repo都有, 从current删除 ，index和repo相同
+e! ------ 仅version有 ，从index and current 删除 
+f! ------ index，version，current都有，且都相同
+特殊情况：
+g! ------ 仅在index和current有 ，repo没有, only add not commit
+h! ------ 仅在current有；index 和 repo都没有，even not add
+i! ------ 仅在 version没有，index和current有，index和current不同
+j! ------ 在 version 没有，index有，current没有（删除）
+
+
+
+
+file changed跟库（version）比得出

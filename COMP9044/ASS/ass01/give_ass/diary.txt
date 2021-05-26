@@ -1,0 +1,86 @@
+#COMP9044  Assignment 1 Diary
+#ZANNING WANG
+zID:z5224151
+|	Data	|	Start	|	Stop	|	Activity		|	Comments
+|20.07.03	|	13:30	|	14:30	|reading assignment	|		-
+|20.07.04	|	14:20	|	16:00   |design .shrug		|		-
+|20.07.06	|	18:00	|	20:30	|	coding			|finish init,add
+|20.07.07	|	21:00	|	22:40	|	coding			|finish commit,log,show	
+|20.07.09	|	22:00	|	00:50	|  debugging locally|finish most of error of subset 0	
+|20.07.11	|	21:00	|	23:00	|	coding			|finish commit, part of rm, status	
+|20.07.12	|	13:00	|	18:00	|	coding/debugging|finish most of subset 1,still have some errors	
+|20.07.13	|	17:00	|	21:00	|	debugging		|upload to vlab, run autotest and debug subset 0	
+|20.07.13	|	22:00	|	01:00	|	coding			|write test00	
+|20.07.14	|	14:00	|	18:00	|	debugging		|test shell test00-test09	
+
+Design of my .shrug
+0)general idea
+Create three folder called: index, version, deleted_files, under the folder ".shrug", which used to store the file under different situations.
+
+1)detailed of each shrug-*
+[0]shrug-init
+when inititalized .shrug, create folder ".shrug", under ".shrug" create  index, version, deleted_files. 
+
+Error check: the exist of ".shrug"; the number of input argument
+
+[1]shrug-add
+move the files given from argument to the folder "index"
+
+Error check: the exist of ".shrug"; the input with "-"; the file name beyond [a-zA-Z0-9.-_]; the input file exist or not
+
+[2]shrug-commit
+move the file from index to version(repo), if the version same as previous version, rm latest version
+
+Error check: the exist of ".shrug"; the number of input argument; the first argument same as "-m"; the input file name without "-"; if there is no change to index; 
+
+[3]shrug-show
+show the file in index or specified file in version(repo)
+
+Error check: the exist of ".shrug"; the given argument must with ":"; the number of input argument; the given file not exist; the given version not exist; the file name not legal; 
+
+[4]shrug-log
+show the number and comment in the folder "version"
+
+Error check: the exist of ".shrug"; the number of input argument; 
+
+[5]shrug-rm
+ues flag to test the argument "--cached", "--force", rm the file from the index if "--cached" exist, rm the file from both current and index, if "--cached" not exist, rm the file without given any error if "--force" exists, after rm any files, make a copy to the deleted file to track these files status.
+
+Error check: the exist of ".shrug", the argument same as "--cached" and "--force"; the exist of file which about to delete; the change of the file without add to ".shrug"; 
+
+[6]shrug-status
+build function different(), check_exist() to help check the status the file, use folder "deleted_files" to track the file which have already been deleted in current folder. 
+show the file according different situation
+#a - file changed, different changes staged for commit
+#b - file changed, changes staged for commit
+#c - file changed, changes not staged for commit
+#d - file deleted
+#e - deleted
+#f - same as repo
+#g - added to index
+#h - untracked
+#i - added to index, file changed
+#j - added to index, file deleted
+
+Error check: the exist of ".shrug"; the number of input argument; check the first commit have been added; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
