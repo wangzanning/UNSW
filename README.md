@@ -1,6 +1,6 @@
-# **UNSW**
-**UNSW Information Technology 8543**
-**Name: Zanning Wang**
+# **UNSW**  
+**UNSW Information Technology 8543**  
+**Name: Zanning Wang**  
 
 **Semester 1（19 Term3）**  
 COMP9020	Foundations of Computer Science  
