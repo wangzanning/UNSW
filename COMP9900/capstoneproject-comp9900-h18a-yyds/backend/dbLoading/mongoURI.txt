@@ -1,0 +1,1 @@
+mongodb+srv://admin:zzYYDS9900@kitchen.5hpbe.mongodb.net/test

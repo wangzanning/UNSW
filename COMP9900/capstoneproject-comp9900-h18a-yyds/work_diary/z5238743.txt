@@ -1,0 +1,60 @@
+Week 1
+
+YYDS Group formed. I created the Lira & GitHub accounts. Together with Weizhou Ren, Xiaoheng Hong, Zanning Wang and Yunze Shi(z5238743, z5224151, z5244619, z5300340). 
+
+I wrote the weekly diary. I also found and discussed with the team all available software tools and libraries that we can use for the project. We think we can use react framework for the front-end and mangoDB and php/Java/Python for the back-end.
+
+Week 2
+
+I wrote the first version of User interface and drafted a design for the Web. I also write the weekly work diary.
+
+User interface contains user register/sign on and new user welcome. Advanced search part and the detailed web page and the part of how to upload the page.
+
+Week 3
+
+I wrote the proposal about front-end part: 1. Interface and Flow Diagram 2.System Architecture about Front-end 3. Edit detailed phototype.
+
+Still learning about redux to regulate front-end component.
+
+
+week 4
+
+I built 1. the ui for basic Welcome page, and the logic of Welcome page. 2. the ui for basic Login/Sign in page, 3. the Avator page and logic.
+
+The plan for next week is to bring more logic for all of the page above. and connect to the server, including retrieving Hot 10 recommendations
+and personal feed, and most importantly, the Navebar.
+
+
+week 5
+
+I built 1. recipe detailed page part for author/ ingredient/picture. 2. more logic for all of the page reported in week4 and connet to server.
+
+The plan for next week is still etrieving Hot 10 recommendations and update some importantly bug
+
+week 6
+
+I still repair bugs for some loading page。 YYDS group conduct a discussion about our retrospective in week 6 about the advantages and disadvantages.
+
+In next week. I will fixed the material-UI styles and write some Jest to test our project.
+
+
+week 7
+
+I still repair bugs for recipe detailed。 I'm still fixing the material-UI styles and write some Jest to test our project.
+
+
+week 8
+
+I still repair bugs for some loading page。 YYDS group conduct DemoB in week 8 and a retrospective about Demo B. 
+
+I'm still fixing the material-UI styles and write some Jest to test our project. 
+
+And update welcome page aboout auto slider.
+
+week 9
+I finish welcome page aboout auto slider and correct the bugs.
+
+I finish Password finding page designing and writing functions.
+
+I finish debuging with all component. 
+ 

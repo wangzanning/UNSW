@@ -1,0 +1,10 @@
+USERS = 'users' # user
+FOLLOWERS = 'followers' # my fans
+FOLLOWINGS = 'followings' # who I follow
+LIKES = 'likes' # my likes
+USER_RECIPES = 'userRecipes' # who post what
+RECIPES = 'recipes' # recipes
+RATES = 'rates' # my rates to recipes
+COMMENTS = 'comments' # comments.
+RECIPIES_COMMENT = 'recipes_comments' # what comment pages a recipe has
+MEAL_TYPES = 'meal_types' # all meal types.

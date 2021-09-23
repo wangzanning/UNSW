@@ -1,0 +1,46 @@
+src
+├── App.js
+├── index.js
+├── assets
+│ 	├── css
+│ 	│	├── base.css
+│ 	│	└── palette.js
+│	├── data
+│ 	│	├── recipe.js
+│ 	│	└── user.js
+│   └── img
+│ 	 	├── background.png
+│ 	 	├── unavailable.png
+│ 	 	└── ...
+├── components
+│	├── Avator.js
+│   ├── Copyright.js
+│   ├── Header.js
+│   └── ...
+├── pages
+│	├── main
+│	├── editRecipe
+│	├── profile
+│	├── signup
+│ 	│	├── index.js
+│ 	│	├── style.js
+│ 	│ 	└── store
+│ 	│	    ├── actionCreators.js
+│ 	│	    ├── constant.js
+│ 	│	    ├── index.js
+│ 	│	    └── reducer.js
+│	└── ... 
+├── router
+│	└── index.js
+├── services
+│	├── axios.js
+│	├── editRecipe.js
+│   ├── feed.js
+│   └── ...
+├── store
+│	├── index.js
+│   └── reducer.js
+└── utils
+    ├── constant.js
+    ├── popMessage.js
+    └── throttle.js

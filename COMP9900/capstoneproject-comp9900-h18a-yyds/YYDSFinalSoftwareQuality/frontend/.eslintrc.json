@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/prop-types": 0,
+        "no-unused-vars": 0,
+        "react/jsx-key": 1,
+        "react/no-unescaped-entities": 1,
+        "react/display-name": 0,
+        "no-irregular-whitespace": 1,
+        "no-dupe-keys": 1,
+        "comma-dangle": 1,
+        "quotes": [ 0, "single" ],
+        "global-strict": 0,
+        "no-extra-semi": 1,
+        "no-underscore-dangle": 0,
+        "no-console": 0,
+        "no-undef": "warn",
+        "semi": [2, "always"],
+        "sort-vars": 0,
+        "comma-dangle": 0
+    }
+}

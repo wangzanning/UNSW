@@ -1,0 +1,37 @@
+Name: Zanning Wang
+zID: z5224151
+
+Week1:
+1. Initial the project repo for our team
+2. Create prototype for welcome page and personal detail page
+3. Participate in the meeting to discuss topic selection and next plan designation
+
+Week2:
+1. build the basic framework for frontend
+2. develop the prototype for our product.
+
+Week3:
+1. bulild login and signup module
+2. build axios and redux part
+
+Week4:
+1. build post recipes page
+
+Week5：
+1. fix bugs
+
+Week6:
+1. fix bugs.
+2. edit edit post part
+
+Week7:
+1. build UI in edit and post part
+2. fix bugs
+
+Week8, 9:
+1. attend retro B
+2. fix bugs
+
+Week10:
+1. finish final report
+2. perpare the final presentation 

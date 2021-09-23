@@ -1,0 +1,23 @@
+ERROR_404_HELP = False
+JWT_SECRET_KEY = 'ZhouZhouZhenHaoKan9900'
+PROPAGATE_EXCEPTIONS = True
+
+MONGO_CLUSTER_ADDR = "mongodb+srv://admin:zzYYDS9900@kitchen.5hpbe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+COMMENT_PAGE_CAPACITY = 10
+
+CACHE_TYPE='redis'
+CACHE_REDIS_HOST='localhost'
+CACHE_REDIS_PORT=6379
+CACHE_REDIS_DB=0
+CACHE_REDIS_URL='redis://localhost:6379/0'
+CACHE_DEFAULT_TIMEOUT=300
+
+MAIL_SERVER = 'smtp.qq.com'  
+MAIL_PORT = 465  
+MAIL_USE_TLS = False  
+MAIL_USE_SSL = True
+MAIL_USERNAME = '791633252@qq.com' 
+MAIL_PASSWORD =  'hxgwtlcnxdtnbeic'
+MAIL_DEFAULT_SENDER = '791633252@qq.com'   
+MAIL_MAX_EMAILS = 10 
+MAIL_ASCII_ATTACHMENTS = False 

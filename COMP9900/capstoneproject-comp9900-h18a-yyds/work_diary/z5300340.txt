@@ -1,0 +1,46 @@
+Week1
+Group formed. I wrote the user story section of the proposal.
+I discussed with the team all available software tools and libraries that we can use for the project.
+I researched throught the current backend frameworks available and discussed with Weizhou the framework we are going to use,
+and the database system for the backend. We decided to use MongoDB as JSON is handy for the data transaction and structuring for the scope of this project.
+For the framework, we decided to use flask as it's highly extensible for further need of new features.
+I spent several days to teach myself the fundamentals of MongoDB and flask.
+
+Week2
+Learned how to user flask-restx to create restful api with swagger page.
+Learned how to crud using MongoDB via pymongo
+Set up the structure of the backend app.
+Wrote the functionality of authentication (log in & sign up) which returns a token
+everything works currently.
+
+Week3
+Completed the backend part for user authentication using JWT (signing up and logging in).
+Completed the functionality for users to like/unlike a comment, follow/unfollow a user,
+rate & edit the rate to a certain recipe, and create/edit/read/delete a recipe.
+designed and improved the document models (schema for MongoDB) of the database for all above mentioned functionality.
+Wrote the draft version of the api that pushes a feed to a user.
+
+Week4
+Completed the basic function of getting user feeds
+Completed the basic function of search using a query to return all relevent recipes.
+
+Week5
+Upgraded function of searching using query on different combinations of fields.
+Refined the logic of database index to enhance the performance of searching. 
+
+Week6
+Modified the logic of caching layer of Redis to ensure better consistency with MongoDB.
+
+Week7
+Fixed some existing bugs. Developed Apis to return hot recipes as a recommendation for users.
+
+Week8
+Developed functionalities to enable users to reset password by sending an email with tokne links to their mailbox.
+The extension used is flask mail.
+
+Week 9:
+Work with frontend team members to fix some bugs. Refilled the database with fresh data by scripting as the old dataset was debricated after being tested & manually modified during the development.
+
+Week10:
+finish final report and perpare the final presentation.
+final bug-fixing 

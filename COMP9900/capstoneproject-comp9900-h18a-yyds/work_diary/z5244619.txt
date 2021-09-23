@@ -1,0 +1,43 @@
+Week1
+Along with the team, I chose MyRecipes as our project. Then I participated in
+the project kick off meeting and discussed about the tech stack our team might
+be using with the project. I helped clarifying the project objectives as well as
+the frontend interfaces.
+
+Week2
+I developed the prototype of the frontend and created user stories as was
+planned since our last meeting. My tasks for week3 are:
+a) Complete the background section for the project proposal
+b) Start adding pages to the react framework that Zanning built
+
+Week3
+I finished the background, as was planned last week, as well as the storyboards
+of the project proposal. Together with the rest of our frontend group, I
+finished finalising our user interfaces and crucial routes. My tasks for week4
+are:
+a) Start working on sprint1
+
+Week4
+I built the ui for personal news feed page, and the logic of user updating
+password. The plan for next week is to bring logic into personal feed page
+and connect to the server, including retrieving personal recommendations
+and personal feed, and most importantly, sort the feed.
+
+Week5
+I finished sorting the feed. I also built the ui for recipe details and the
+logic for fetching data from the server. The task for the next week is to work
+on the styling of recipe detail.
+
+Week7
+I finalised the recipe detail page and fixed login issues as well as implemented
+message popups where necessary.
+
+Week8
+I fixed bugs on rating and commenting on a recipe, redesigned the carousel
+on feed page and connected the carousel page and the recommended users to the
+server.
+
+Week9
+I finished the final touch on the UI, including the font, the landing page, the
+loader and the header. And together with other team members, I finished writing
+the project report.

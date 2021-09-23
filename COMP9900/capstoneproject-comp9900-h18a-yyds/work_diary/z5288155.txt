@@ -1,0 +1,26 @@
+Week 1
+Team YYDS formed. As scrum master, I created Jira and GitHub account. Participated group meetings and distributed work. Did research with Xiaoheng and decided to apply flask as backend framework and MongoDB as database.
+
+Week 2
+Discussed with other memebers to finalize the wireframe and workflow of the website. Documented functionalities we need to implement in the product. Defined goals and duration for each sprint in the entire progress. Managed Jira account and created first sprint. As a backend developer, I also learned how to use Flask and MongoDB, which is doing preparation for the development in following weeks.
+
+Week 3
+Developed APIs of editing and deleting recipes with giving corresponding responses. Discussed with members and decided to development a well-designed recommendation system as novel function in the project. Wrote proposal document including System Architecture and Sprints, and assisted in revision.  
+
+Week 4
+Implement APIs adding and deleting comment and pages related to user profile. Reasearch and learned how to manage state by using redux. And developed three user stories in Sprint 1 including enable users to browse others profile and subscribe/unsubscribe them.
+
+Week5
+Implemented API related comment and fixed corresponding issues. And fixed remaining bugs in front-end from previous sprints. Plus, finished demo A with Xiaoheng and Yunze, managed and showed Jira account to display working progress. Will keep implementing functionality of search in the following week.
+
+Week 6
+Build search page including both interface and API to display search results of given any combination of meal-type, recipe name, method and ingredients as defined in project spec. And also discussed with team members to resolve problem of rendering as fetching recipe data was lasting for a long time.
+
+Week 7
+Held retrospective meeting A to discuss what we could do to make improvement. Fixed issues in API of comment, implemented API of recommendation in detail page. And implemented functionality about likes.
+
+Week 8
+Demonstrated development progress to menter in Lab. Achieved function of loading recipes by page to avoid network issue during requesting. I also fixed several bugs to improve the user experience.
+
+Week 9
+Implemented user recommendation in feed page by finding users who did similar ratings with the logged-in user. And clear bugs and unreasonable design as well to prepare the final submission.

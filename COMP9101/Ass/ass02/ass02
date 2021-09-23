@@ -1,0 +1,94 @@
+song_n = [n1, n2, n3,...,ni];
+let counter_CD = 0;
+let Max_time = m;
+let current = 0;
+for (let i=0; i<= song_n.length; i++) {
+	if (current <= Max_time) {
+		current += song_n[i]
+	} else {
+		current = 0; 
+		counter_CD += 1
+	}
+}
+return counter_CD
+
+
+
+Q5:
+job_N= [n1, n2, ...,ni];
+sort(job_N)
+enqueue(job_N)
+dequeue(job_N)
+
+
+Q4:
+let h = [h1, h2, h3,...,hi];
+let total = 0;
+let least = (0 + i-1) * i / 2;
+for (let k=0; k<=i; k++) {
+	total += h[k];
+}
+if (total >= least) {
+	return true
+}else {
+	return false
+}
+
+
+Q3:
+//array1(ai<=gi),array2(ai>gi)
+//array1 = [[2,4],[3,6],[4,5]] (the first one is ai, the second is gi)
+
+[array1, array2] = divide_two(N);
+sort_1(array1);
+sort_2(array2);
+let start = S
+for (let i=0; i<array1.length;i++) {
+	if (start >= array1[i][0]) {
+		start = start - array1[i][0] + array1[i][1]
+	} else {
+		return "no such ordering"
+	}
+}
+
+for (let i=0; i<array1.length; i++) {
+	if (start >= array2[i][0]) {
+		start = start - array2[i][0] + array2[i][1]
+	} else {
+		return "no such ordering"
+	}
+}
+
+return "there is such an ordering !"
+
+
+Q2:
+sort(N)
+sort(P)
+sort(Q)
+let pointer_N1 = 0
+let pointer_N2 = N.length - 1
+let pointer_P = 0
+let pointer_Q = Q.length - 1
+let result = []
+
+while (pointer_P < P.length){
+	if (P[pointer_N1] <= N[pointer_N1]) {
+		result.push(P[pointer_P])
+		pointer_P ++
+		pointer_N1 ++
+	} else {
+		pointer_P ++
+	}
+}
+
+while (pointer_Q > 0) {
+	if (Q[pointer_Q] >= N[pointer_N2]) {
+		result.push(Q[pointer_Q])
+		pointer_P --
+		pointer_N2 --
+	} else {
+		pointer_Q --
+	}
+}
+	

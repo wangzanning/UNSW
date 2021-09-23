@@ -1,0 +1,83 @@
+.ant-btn {
+    margin-right: 8px;
+}
+
+.post-recipe {
+    width: 50%;
+}
+
+.container {
+    font-family: 'Poppins', '-apple-system', 'Arial';
+    color: #B75318;
+}
+
+.add-button {
+    border-radius: 4px;
+    background-color: #B75318;
+    border: 1px solid #B75318;
+}
+
+.add-button:hover,
+.add-button:focus {
+    background-color: #DA9D42;
+    border: 1px solid #DA9D42;
+}
+
+.link-top {
+    position: relative;
+    left: 250px;
+    width: 120%;
+    height: 1px;
+    border-top: dotted rgba(218, 157, 66, 0.5) 1px;
+}
+
+.input-box {
+    border-radius: 4px;
+    border: 1px solid rgba(218, 157, 66, 0.5);
+}
+
+.input-box:hover {
+    border-radius: 4px;
+    border: 1px solid #B75318;
+    color: #1b1b1b;
+}
+
+.input-box:focus:checked {
+    border-radius: 4px;
+    border: 1px solid #B75318;
+    color: #1b1b1b;
+}
+
+.progressClass {
+    margin: 10px 0px 50px 120px;
+}
+
+.button-style-submit {
+    border-radius: 4px;
+    border: 1px solid #B75318;
+    color: #B75318;
+    background-color: rgb(255 255 255);
+}
+
+.button-style-submit:hover,
+.button-style-submit:focus {
+    border-radius: 4px;
+    color: #B75318;
+    background-color: rgba(183, 83, 24, 0.04);
+    border: 1px solid #B75318;
+}
+
+.button-style-reset {
+    border-radius: 4px;
+    border: 1px solid rgba(218, 157, 66, 0.5);
+    color: #DA9D42;
+    background-color: rgb(255 255 255);
+}
+
+.button-style-reset:hover,
+.button-style-reset:focus {
+    border-radius: 4px;
+    color: #B75318;
+    background-color: rgba(183, 83, 24, 0.04);
+    border: 1px solid #B75318;
+}
